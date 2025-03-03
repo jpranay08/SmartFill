@@ -1,35 +1,24 @@
 {
-    "manifest_version": 3,
-    "version": "1.0.0",
-    "name": "SmartFill- An AI Chrome Extension",
-    "icons":{
-        "32":"icon32.png",
-        "128":"icon128.png"
-    },
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "SmartFill- An AI Chrome Extension",
+  "icons": {
+    "32": "icon32.png",
+    "128": "icon128.png"
+  },
 
-    "action":{
-        "default_popup":"index.html"
-    },
-    "permissions":[
-        "scripting",
-        "activeTab"
-    ],
-    "host_permissions":[
-        "http://*/*",
-        "https://*/*"
-    ],
-    "background":{
-        "service_worker":"background.js"
-    },
-    "content_scripts":[
-        {
-            "matches" :["http://*/*",
-        "https://*/*"],
-        "js":["content.js"]
-        }
-    ]
-
-
-
-
-  }
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

@@ -1,3 +1,3 @@
 chrome.runtime.onInstalled.addListener(() => {
-    console.log("AI Autocomplete Extension Installed");
+  console.log('AI Autocomplete Extension Installed');
 });
